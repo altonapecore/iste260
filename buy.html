@@ -1,29 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href=".css">
+    <link rel="stylesheet" href="styles.css">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Buy</title>
 </head>
 <body>
-<!--Top "Logo"-->
-    <div class="logo">
-        <img src="images/logo.jpg" alt="logo" width="149" height="152">
-    </div>
 <!--Navigation Bar-->
     <div class="navbar">
-        <a href="homepage.html">Home</a>
-        <a class="active" href="buy.html">Buy</a>
-        <a href="sell.html">Sell</a>
-        <a href="messages.html">Messages</a>
-        <a href="profile.html">Profile</a>
-        <a href="setting.html">Setting</a>
-        <a href="Privacy.html">privacy Policy</a>
-        <p>Our Commitment to You</p>
+        <a href="homepage.html"><img class="logo" src="images/logo.jpg" alt="logo" width="75" height="76"></a>
+        <a class="link active" href="buy.html">Buy</a>
+        <a class="link" href="sell.html">Sell</a>
+        <a class="link" href="messages.html">Messages</a>
+        <a class="link" href="profile.html">Profile</a>
+        <a class="link" href="setting.html">Setting</a>
+        <a class="bottomLink" href="privacy.html">Privacy Policy</a>
+        <a class="bottomLink" href="commitment.html">Our Commitment <br/> To You</a>
     </div>
 <!--Content-->
-<div class="content">
+<div id="options">
     <h3>Items per page: </h3>
         <select name="page" id="page">
             <option value="8">8</option>
@@ -48,83 +44,82 @@
             <option value="Date: New to old">New to old (date)</option>
             <option value="Rating">Rating</option>
         </select>
-<!--Images-->
-<figure style>
-    <a href=".html">
-        <img src="images/waffle.JPG" alt="waffle" width="189" height="252">
-    </a>
-    <figcaption>
-        <h3>Item Name   $40.00</h3>
-        <p>Mickey Mouse waffle maker! Original price is $75.00 and this one was barely used. 
-           Please message me asap, moving out in a month. Willing to negociate the price.
-        </p>
-    </figcaption>
-</figure>
-<figure>
-    <a href=".html">
-        <img src="images/book.png" alt="book" width="189" height="252">
-    </a>
-    <figcaption>
-        <h3>Item Name   $18.00</h3>
-        <p>Disney cook book for sale! Got it as a gift and never used it. Willing to trade or neggociate!</p>
-    </figcaption>
-</figure>
-<figure>
-    <a href=".html">
-        <img src="images/funk.png" alt="funk" width="189" height="252">
-    </a>
-    <figcaption>
-        <h3>Item Name   $8.00</h3>
-        <p>I have a collection of funko pop. I have so many that I would like to get rid of.
-           Message me if you have any questions or are looking for a specific funk pop. Prices differ.
-        </p>
-    </figcaption>
-</figure>
-<figure>
-    <a href=".html">
-        <img src="images/flower.png" alt="flowers" width="189" height="252">
-    </a>
-    <figcaption>
-        <h3>Item Name   $15.00</h3>
-        <p>I specialize in flower arrangements. Just let me know what your favorite flowers are and I will let you know how much it would cost.</p>
-    </figcaption>
-</figure>
-<figure>
-    <a href=".html">
-        <img src="images/IMG_2992.JPG" alt="elephant" width="189" height="252">
-    </a>
-    <figcaption>
-        <h3>Item Name   $10.00</h3>
-        <p>Cute handmade elephant for sale!!! Can customize colors. DM if you're interested!!!</p>
-    </figcaption>
-</figure>
-<figure>
-    <a href=".html">
-        <img src="images/bee.jpeg" alt="bee" width="189" height="252">
-    </a>
-    <figcaption>
-        <h3>Item Name   $12.00</h3>
-        <p>Cute handmade bee for sale!!! Can customize colors. DM if you're interested!!!</p>
-    </figcaption>
-</figure>
-<figure>
-    <a href=".html">
-        <img src="images/socks.JPG" alt="socks" width="189" height="252">
-    </a>
-    <figcaption>
-        <h3>Item Name   $5.00</h3>
-        <p>Got some socks that came in a package. Wanted to see if anyone wanted them for $5.00.</p>
-    </figcaption>
-</figure>
-<figure>
-    <a href=".html">
-        <img src="images/plant.jpeg" alt="plant" width="189" height="252">
-    </a>
-    <figcaption>
-        <h3>Item Name   $7.00</h3>
-        <p>Cute little plant that is perfect for a dorm room. Easy to take care of and doesn't need a lot of attention.</p>
-    </figcaption>
-</figure>   
+</div>
+<div class="content">
+    <!--Images-->
+    <figure style>
+        <a href=".html">
+            <img src="images/waffle.JPG" alt="waffle" width="189" height="252">
+        </a>
+        <figcaption>
+            <h3>Mickey Mouse Waffle Maker &nbsp; $40.00</h3>
+            <p>Barely used, willing to negotiate price.</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <a href=".html">
+            <img src="images/book.png" alt="book" width="189" height="252">
+        </a>
+        <figcaption>
+            <h3>Disney Cook Book &nbsp; $18.00</h3>
+            <p>Never used it, willing to negotiate price.</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <a href=".html">
+            <img src="images/funk.png" alt="funk" width="189" height="252">
+        </a>
+        <figcaption>
+            <h3>Assorted Funko Pops &nbsp; $8.00</h3>
+            <p>Prices differ per Pop. Message me for details.
+            </p>
+        </figcaption>
+    </figure>
+    <figure>
+        <a href=".html">
+            <img src="images/flower.png" alt="flowers" width="189" height="252">
+        </a>
+        <figcaption>
+            <h3>Custom Flower Arrangements &nbsp; $15.00</h3>
+            <p>Price varies based on flower choice. Message for details.</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <a href=".html">
+            <img src="images/IMG_2992.JPG" alt="elephant" width="189" height="252">
+        </a>
+        <figcaption>
+            <h3>Cute Handmade Elephants &nbsp; $10.00</h3>
+            <p>Can customize colors. DM if interested!!</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <a href=".html">
+            <img src="images/bee.jpeg" alt="bee" width="189" height="252">
+        </a>
+        <figcaption>
+            <h3>Cute Handmade Bee &nbsp; $12.00</h3>
+            <p>Can customize colors. DM if you're interested!!!</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <a href=".html">
+            <img src="images/socks.JPG" alt="socks" width="189" height="252">
+        </a>
+        <figcaption>
+            <h3>Peppermint Socks &nbsp; $5.00</h3>
+            <p>Got them in a package by mistake and never used them.</p>
+        </figcaption>
+    </figure>
+    <figure>
+        <a href=".html">
+            <img src="images/plant.jpeg" alt="plant" width="189" height="252">
+        </a>
+        <figcaption>
+            <h3>Desk Plant &nbsp; $7.00</h3>
+            <p>Doesn't need a lot of attention and is perfect for a dorm room!</p>
+        </figcaption>
+    </figure>   
 </div>
 <!--Footer-->
 <div class="footer">
