@@ -58,6 +58,7 @@ figure{
     position: fixed;
     bottom: 0;
     width: 98vw;
+    margin-bottom: .5em;
 }
 
 .footer a{
@@ -111,7 +112,7 @@ select{
     margin: 1em auto;
 }
 
-li{
+#about li{
     font-size: 2em;
     padding-top: .7em;
 }
@@ -280,4 +281,21 @@ input{
     height: 45%;
     margin-left: 1em;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+}
+
+#settings{
+    background-color: #aac5af;
+    border: 3px solid #778745;
+    border-radius: 8px;
+    width: 75%;
+    float: right;
+    margin-right: 3em;
+    font-size: 1.5em;
+    height: 92.5vh;
+    padding-left: 3em;
+    color: #09080C;
+}
+
+#settings h2{
+    text-align: unset;
 }
