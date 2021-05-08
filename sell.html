@@ -10,8 +10,8 @@
 <!--Navigation Bar-->
     <div class="navbar">
         <a href="homepage.html"><img class="logo" src="images/logo.jpg" alt="logo" width="75" height="76"></a>
-        <a class="link active" href="buy.html">Buy</a>
-        <a class="link" href="sell.html">Sell</a>
+        <a class="link" href="buy.html">Buy</a>
+        <a class="link active" href="sell.html">Sell</a>
         <a class="link" href="messages.html">Messages</a>
         <a class="link" href="profile.html">Profile</a>
         <a class="link" href="setting.html">Setting</a>
@@ -19,19 +19,39 @@
         <a class="bottomLink" href="commitment.html">Our Commitment <br/> To You</a>
     </div>
 <!--Content-->
-<div id="float">
-	<form>
-	<label id="font" name="title">Title:<input type="text"></label><br>
-	<label id="font" name="price">Price:<input type="text"></label><br>
-	<label id="font" name="date">Posted on <input type="date"></label><br>
-	<label id="font"><select name="choice" id="choice">
-		   			<option value="MEET UP ONLY">MEET UP ONLY</option>
-					<option value="DROP OFF ONLY">DROP OFF ONLY</option>
-	</select></label><br>
-	<label id="font" name="description">Description:<textarea></textarea></label><br>
-	<button>Contact Seller</button>
-	</form>
-	<img id="float" src="images/chair.png" alt="A Black Chair" width="200" height="200">
+<div id="main">
+    <div id="preview">
+        <div id="details">
+            <h3>Preview Of Listing</h3>
+            <h2>Wooden Chair &nbsp;&nbsp; $10</h2>
+            <p><b>Category:</b> Furniture</p>
+            <p><b>Description:</b> Barely used black wooden chair in good condition. Doesn't creak.</p>
+            <p><b>Sold By:</b> Alex Pecore</p>
+            <p id="date"><b>Posted On: </b></p>
+            <br/>
+            <p><b>MEET UP ONLY</b></p>
+        </div>
+        <img id="chair" src="images/chair.png" alt="chair">
+        <p id="button">Contact Seller</p>
+    </div>
+    <div id="form">
+        <form>
+            <h2>Input Info Here</h2>
+            <label for="title"><b>Title: </b></label>
+            <input name="title" id="title" type="text"><br/>
+            <label for="price"><b>Price: $</b></label>
+            <input name="price" id="price" type="number"><br/>
+            <label for="category"><b>Category: </b></label>
+            <input name="category" id="category" type="text"><br/>
+            <label for="desc"><b>Item Description: </b></label>
+            <input name="desc" id="desc" type="textarea">
+        </form>
+        <p>Meet up to sell item: <b>YES</b></p>
+        <p>Drop item off at location: <b>NO</b></p>
+        <br/><br/><br/><br/>
+        <p id="add">Add photos <span><b>+</b></span></p>
+        <img id="chairInput" src="images/chair.png" alt="chair">
+    </div>
 </div>
 <!--Footer-->
 <div class="footer">
@@ -39,4 +59,12 @@
 <a href="References.html">References</a>
 </div>
 </body>
+<script>
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    var n = new Date();
+    var y = n.getFullYear();
+    var m = n.getMonth();
+    var d = n.getDate();
+    document.getElementById("date").innerHTML += months[m] + " " + d + ", " + y;
+</script>
 </html> 

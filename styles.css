@@ -163,6 +163,7 @@ li{
     border-radius: 5px;
     padding: 10px;
     padding-top: 0;
+    padding-bottom: 14px;
     margin: 10px 20px;
     width: 66%;
     float: right;
@@ -206,4 +207,77 @@ li{
 
 #message span{
     margin-left: 85%;
+}
+
+#preview{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-left: 2em;
+    margin-right: 2em;
+    background-color: #aac5af;
+    border: 3px solid #778745;
+    border-radius: 8px;
+    height: 90vh;
+}
+
+#details{
+    width: 40%;
+    padding-left: 2em;
+    font-size: 1.25em;
+}
+
+#chair{
+    width: 40%;
+    height: 50%;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+}
+
+#button{
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 25%;
+    background-color: #778745;
+    border: 3px solid #304100;
+    border-radius: 12px;
+    font-size: 3em;
+    font-weight: bold;
+    padding-top: .25em;
+}
+
+#form{
+    width: 25%;
+    background-color: #aac5af;
+    border: 3px solid #778745;
+    border-radius: 8px;
+    height: 90vh;
+}
+
+#form p{
+    font-size: 1.25em;
+    padding-left: .5em;
+}
+
+#add span{
+    margin-left: 60%;
+}
+
+label{
+    margin-left: .5em;
+    line-height: 2em;
+}
+
+input{
+    float: right;
+    margin-right: .5em;
+}
+
+#chairInput{
+    height: 45%;
+    margin-left: 1em;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
 }
