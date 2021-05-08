@@ -23,7 +23,7 @@ a:hover{
     float: left;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 90vh;
     text-align: center;
     margin-left: 1em;
     padding: .75em;
@@ -122,4 +122,88 @@ li{
     border-radius: 8px;
     border: 3px solid #778745;
     margin-top: 4em;
+}
+
+#main{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#messages{
+    width: 70%;
+    background-color: #aac5af;
+    border: 3px solid #778745;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+#contacts{
+    width: 20%;
+    margin-left: 3em;
+    height: 93vh;
+    background-color: #adaac5;
+    border: 3px solid #646083;
+    border-radius: 8px;
+    font-size: 1.3em;
+}
+
+#contacts p{
+    margin-top: 2em;
+    padding-left: 3em;
+}
+
+.selected{
+    font-weight: bold;
+    color: #778745;
+}
+
+.container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    padding-top: 0;
+    margin: 10px 20px;
+    width: 66%;
+    float: right;
+    height: 3.55em;
+    text-align: right;
+}
+
+.darker {
+    border-color: #ccc;
+    background-color: #ddd;
+    float: left;
+    text-align: left;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.time-right {
+    float: right;
+    color: #aaa;
+}
+
+.time-left {
+    float: left;
+    color: #999;
+}
+
+#message{
+    margin: 0 auto;
+    margin-top: 68%;
+    width: 90%;
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    text-align: left;
+    line-height: 1.6em;
+}
+
+#message span{
+    margin-left: 85%;
 }
